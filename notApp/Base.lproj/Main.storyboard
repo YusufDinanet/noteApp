@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="notApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zamani giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BtG-g6-5Yt">
+                                <rect key="frame" x="42" y="179" width="331" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ZfO-fR-8Kq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEH-xo-8Um">
+                                <rect key="frame" x="42" y="273" width="97" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Doo-Vn-Swu"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
+                                <connections>
+                                    <action selector="kaydetTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bnq-ce-0oK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHb-TJ-RWZ">
+                                <rect key="frame" x="297" y="273" width="97" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="JqX-p3-oe1"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sil"/>
+                                <connections>
+                                    <action selector="silTiklandi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUm-xt-iNO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Yapilacak Is :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aP1-Q7-eYS">
+                                <rect key="frame" x="42" y="409" width="331" height="95"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="95" id="vkt-2W-Wbe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Yapilacak Zaman :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bav-pS-vZY">
+                                <rect key="frame" x="42" y="583" width="331" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Notu giriniz" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0y-oi-gcu">
+                                <rect key="frame" x="42" y="93" width="331" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="EOf-I6-TKw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zHb-TJ-RWZ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1UH-RZ-qwg"/>
+                            <constraint firstItem="e0y-oi-gcu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Ll-Ws-5fI"/>
+                            <constraint firstItem="zHb-TJ-RWZ" firstAttribute="baseline" secondItem="LEH-xo-8Um" secondAttribute="firstBaseline" id="A0f-Wx-fhw"/>
+                            <constraint firstItem="e0y-oi-gcu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="FTu-ww-pxC"/>
+                            <constraint firstItem="e0y-oi-gcu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="Fnn-Dq-Uvf"/>
+                            <constraint firstItem="e0y-oi-gcu" firstAttribute="leading" secondItem="BtG-g6-5Yt" secondAttribute="leading" id="M7w-UY-a3e"/>
+                            <constraint firstItem="aP1-Q7-eYS" firstAttribute="trailing" secondItem="bav-pS-vZY" secondAttribute="trailing" id="OkG-a1-6P8"/>
+                            <constraint firstItem="BtG-g6-5Yt" firstAttribute="trailing" secondItem="aP1-Q7-eYS" secondAttribute="trailing" id="XlS-Mf-HXk"/>
+                            <constraint firstItem="e0y-oi-gcu" firstAttribute="trailing" secondItem="BtG-g6-5Yt" secondAttribute="trailing" id="YZj-ja-Bx9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bav-pS-vZY" secondAttribute="bottom" constant="184" id="cSL-BN-iv4"/>
+                            <constraint firstItem="LEH-xo-8Um" firstAttribute="baseline" secondItem="zHb-TJ-RWZ" secondAttribute="baseline" id="cYk-bF-yuo"/>
+                            <constraint firstItem="LEH-xo-8Um" firstAttribute="top" secondItem="BtG-g6-5Yt" secondAttribute="bottom" constant="60" id="eys-nc-iSU"/>
+                            <constraint firstItem="LEH-xo-8Um" firstAttribute="leading" secondItem="aP1-Q7-eYS" secondAttribute="leading" id="px9-Rm-npd"/>
+                            <constraint firstItem="BtG-g6-5Yt" firstAttribute="top" secondItem="e0y-oi-gcu" secondAttribute="bottom" constant="41" id="q05-gc-Ang"/>
+                            <constraint firstItem="aP1-Q7-eYS" firstAttribute="leading" secondItem="bav-pS-vZY" secondAttribute="leading" id="qxS-si-WMy"/>
+                            <constraint firstItem="BtG-g6-5Yt" firstAttribute="leading" secondItem="LEH-xo-8Um" secondAttribute="leading" id="tQs-jG-CGv"/>
+                            <constraint firstItem="bav-pS-vZY" firstAttribute="top" secondItem="aP1-Q7-eYS" secondAttribute="bottom" constant="79" id="vVQ-Mc-Bpr"/>
+                            <constraint firstItem="aP1-Q7-eYS" firstAttribute="top" secondItem="LEH-xo-8Um" secondAttribute="bottom" constant="83" id="ydG-98-NDH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="notLabel" destination="aP1-Q7-eYS" id="2yI-GX-wBF"/>
+                        <outlet property="notTextField" destination="e0y-oi-gcu" id="bgf-yK-MOa"/>
+                        <outlet property="zamanLabel" destination="bav-pS-vZY" id="eAs-e2-hkS"/>
+                        <outlet property="zamanTextField" destination="BtG-g6-5Yt" id="4YS-GV-bdG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="85.714285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
